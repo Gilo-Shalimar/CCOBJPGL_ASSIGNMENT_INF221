@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Ellipse fill="#535c3200" layoutX="68.0" layoutY="37.0" radiusX="116.0" radiusY="111.0" stroke="#516126" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c3200" layoutX="-1.0" layoutY="316.0" radiusX="43.0" radiusY="43.0" stroke="#526128" strokeType="INSIDE" strokeWidth="7.0" />
+      <Ellipse fill="#545c3200" layoutX="231.0" layoutY="222.0" radiusX="36.0" radiusY="35.0" stroke="#526128" strokeType="INSIDE" strokeWidth="7.0" />
+      <Ellipse fill="#545c32" layoutX="325.0" layoutY="91.0" radiusX="48.0" radiusY="48.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c32" layoutX="523.0" layoutY="212.0" radiusX="36.0" radiusY="35.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c32" layoutX="603.0" layoutY="37.0" radiusX="116.0" radiusY="111.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Label graphicTextGap="3.0" layoutX="184.0" layoutY="112.0" prefHeight="48.0" prefWidth="271.0" text="VIEWFINDER" textAlignment="CENTER" textFill="#3a4329">
+         <font>
+            <Font name="Arial Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="179.0" text="username" textFill="#4f6132">
+         <font>
+            <Font name="Arial Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="228.0" text="password" textFill="#4f6132">
+         <font>
+            <Font name="Arial Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mytextfield" layoutX="149.0" layoutY="175.0" prefHeight="25.0" prefWidth="393.0" promptText="enter password" style="-fx-border-color: darkgreen;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="mypasswordfield" layoutX="149.0" layoutY="224.0" prefHeight="25.0" prefWidth="393.0" promptText="enter password" style="-fx-border-color: darkgreen;">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="mybutton" layoutX="280.0" layoutY="263.0" mnemonicParsing="false" onAction="#login" prefHeight="23.0" prefWidth="51.0" style="-fx-border-color: DARKGREEN;" text="LOGIN" textFill="#4d5b25">
+         <font>
+            <Font name="Arial Bold Italic" size="10.0" />
+         </font>
+      </Button>
+      <Ellipse fill="#555e32" layoutX="600.0" layoutY="386.0" radiusX="84.0" radiusY="80.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Ellipse fill="#535c3200" layoutX="603.0" layoutY="388.0" radiusX="116.0" radiusY="111.0" stroke="#516126" strokeType="INSIDE" strokeWidth="10.0" />
+      <ImageView fitHeight="140.0" fitWidth="334.0" layoutX="335.0" layoutY="262.0">
+         <image>
+            <Image url="@../../../../Downloads/image-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <Ellipse fill="#545c32" layoutX="393.0" layoutY="355.0" radiusX="18.0" radiusY="18.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c3200" layoutX="443.0" layoutY="277.0" radiusX="18.0" radiusY="18.0" stroke="#526128" strokeType="INSIDE" strokeWidth="5.0" />
+      <Ellipse fill="#545c32" layoutX="26.0" layoutY="218.0" radiusX="12.0" radiusY="12.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c32" layoutX="249.0" layoutY="342.0" radiusX="18.0" radiusY="18.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Label graphicTextGap="3.0" layoutX="188.0" layoutY="112.0" prefHeight="48.0" prefWidth="271.0" text="VIEWFINDER" textAlignment="CENTER" textFill="#768a50">
+         <font>
+            <Font name="Arial Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="mywarninglabel" graphicTextGap="3.0" layoutX="163.0" layoutY="296.0" text="username &amp; password doesn't match" textAlignment="CENTER" textFill="#613932" visible="false">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <Ellipse fill="#545c3200" layoutX="188.0" layoutY="402.0" radiusX="48.0" radiusY="48.0" stroke="#526128" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c32" layoutX="188.0" layoutY="400.0" radiusX="18.0" radiusY="18.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c3200" layoutX="449.0" layoutY="31.0" radiusX="12.0" radiusY="12.0" stroke="#526128" strokeType="INSIDE" strokeWidth="5.0" />
+      <Ellipse fill="#545c32" layoutX="467.0" layoutY="133.0" radiusX="18.0" radiusY="18.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c32" layoutX="401.0" layoutY="103.0" radiusX="12.0" radiusY="12.0" stroke="#51612700" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#545c3200" layoutX="249.0" radiusX="48.0" radiusY="48.0" stroke="#526128" strokeType="INSIDE" strokeWidth="10.0" />
+      <ImageView fitHeight="167.0" fitWidth="168.0" layoutX="-3.0" layoutY="243.0">
+         <image>
+            <Image url="@../../../../Downloads/image-removebg-preview%20(5).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="157.0" fitWidth="200.0" layoutX="-21.0" layoutY="-15.0" rotate="-45.0">
+         <image>
+            <Image url="@../../../../Downloads/image-removebg-preview%20(3).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
